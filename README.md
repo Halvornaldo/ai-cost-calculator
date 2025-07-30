@@ -1,69 +1,33 @@
-# React + TypeScript + Vite
+# AI Calculator Projects
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains two separate calculator projects:
 
-Currently, two official plugins are available:
+## 📊 AI Cost Savings Calculator
+**Location:** `/ai-cost-savings-calculator`
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+An interactive web tool that helps Small and Medium Business (SMB) owners calculate potential cost savings from implementing AI automation in their operations.
 
-## Expanding the ESLint configuration
+- **Target:** Business owners with 5-50 employees
+- **Purpose:** Calculate operational savings from AI
+- **Goal:** Lead generation for AI courses
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+[View Project →](./ai-cost-savings-calculator)
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 💰 AI Pricing Calculator  
+**Location:** `/ai-pricing-calculator`
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+A comparison tool that helps developers and businesses compare pricing between different AI models and providers (GPT-4, Claude, Gemini, etc.).
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+- **Target:** Developers and technical teams
+- **Purpose:** Compare AI API costs
+- **Goal:** Find most cost-effective AI solution
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+[View Project →](./ai-pricing-calculator)
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## Why Two Projects?
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+These calculators serve different audiences and purposes:
+- **Cost Savings Calculator**: For business owners wanting to understand AI's ROI
+- **Pricing Calculator**: For developers comparing AI API costs
+
+Each project has its own documentation, requirements, and implementation approach.
